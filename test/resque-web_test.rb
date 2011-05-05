@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/test_helper')
 require 'resque/server/test_helper'
- 
+
 # Root path test
 context "on GET to /" do
   setup { get "/" }
@@ -33,7 +33,7 @@ context "on GET to /failed" do
   should_respond_with_success
 end
 
-# Stats 
+# Stats
 context "on GET to /stats/resque" do
   setup { get "/stats/resque" }
 
@@ -51,4 +51,3 @@ context "on GET to /stats/resque" do
 
   should_respond_with_success
 end
-
